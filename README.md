@@ -10,7 +10,7 @@ createdocker-compose.yml with content
 version: '2'
 services:
   app:
-    build: .
+    image: fastsol/livehelperchat:latest
     ports:
       - "8082:80"
     volumes:
@@ -33,4 +33,4 @@ services:
     restart: always
 ```
 
-Than type ```docker-compose up -d``` and press Entern/Return
+Than type ```docker-compose up -d``` and press Enter/Return
