@@ -1,7 +1,7 @@
 FROM tutum/apache-php:latest
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV TAG 3.20v
+ENV TAG 3.27v
 
 RUN apt-get update && \
     apt-get -y install php5-curl && \
