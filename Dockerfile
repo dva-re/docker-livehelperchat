@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TAG 3.27v
 
 RUN apt-get update && \
-    apt-get -y install php-bcmath && \
+    apt-get -y install php-bcmath curl && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /etc/apache2/sites-enabled/* && \
